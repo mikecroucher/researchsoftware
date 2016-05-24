@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h2>Research Software Engineering at Sheffield</h2>
+
+					<p>Mike Croucher</p>
+						<p>EPSRC Research Software Engineering Fellow</p>
+                <a href="http://www.walkingrandomly.com">www.walkingrandomly.com</a>
+                <br>
+                <a href="http://twitter.com/walkingrandomly">@walkingrandomly</a>
+                <br>
+                <a href="mailto:M.Croucher@Sheffield.ac.uk">M.Croucher@Sheffield.ac.uk</a>
+								<br>
+								<a href="http://opendsi.cc/">Sheffield Open Data Science Initiative</a>
+								<br>
+								<a href="http://rse.shef.ac.uk">Research Software Engineering at Sheffield</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Imagine...</h2>
+					<h2 class="fragment fade-in">Your results are amazing!</h2>
+					<h2 class="fragment fade-in">but wrong</h2>
+				</section>
+
+				<section data-background="woes.png" data-background-size="contain">
+					</section>
+
+					<section>
+						<h2>We have a problem!</h2>
+						<img src="problem.gif">
+					</section>
+
+					<section>
+						<h1>Croucher's law</h1>
+						<h2 class="fragment fade-in">I can be an idiot and WILL make mistakes.</h2>
+						<h2 class="fragment fade-in">You are no different!</2>
+					</section>
+
+					<section>
+						<h1>Your Analysis?</h1>
+						<h3 class="fragment fade-in">What you did</h3>
+						<p class="fragment fade-in">Open package foo. Click, Click, drag, Click, Click, Click, Right-Click, Save, 'results.csv'.</p>
+						<p class="fragment fade-in">Load into Excel. Click, drag, generate graph, right click, save, 'pretty-graph.png'</p>
+					</section>
+					<section>
+						<h1>Your Analysis?</h1>
+						<h3>What you said</h3>
+						<p> I analysed my data in foo using the bar analysis. Here's a graph of the results.<p>
+					</section>
+					<section>
+						<h1>How reproducible is a mouse click?</h1>
+					</section>
+
+					<section>
+						<h1>Steps to reproducibility</h1>
+            <ul>
+						<li> Automation (learn to program)
+            <li> Write code in a (very) high-level language
+            <li> Get some training
+            <li> Use version control
+            <li> Get a code buddy (Maybe an RSE!)
+            <li>Share your code and data openly
+            <li>Write tests
+						</ul>
+					</section>
+
+					<section>
+						<h1>Want help?</h2>
+          </section>
+					<section data-background="RSE_Sheffield.png" data-background-size="contain">
+          </section>
+
+					<section>
+                  <p>2 Research Software Engineering Fellows in Sheffield</p>
+                  <p>First Fellowship of its kind</p>
+                  <a href="https://www.shef.ac.uk/dcs/latest-news/richmond-and-croucher-awarded-epsrc-rse-fellowships-1.540914"><img src="Fellowship.png"></a>
+          </section>
+
+					<section>
+						<h1> What else do we do? </h1>
+					</section>
+
+					<section data-background="WhatWeDo.png" data-background-size="contain">
+          </section>
+
+					<section>
+						<p><a href="http://rse.shef.ac.uk/">http://rse.shef.ac.uk/</a></p>
+					</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
